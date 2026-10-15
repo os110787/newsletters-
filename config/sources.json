@@ -1,0 +1,12 @@
+[
+  {"id":"google-search-docs","name":"Google Search Central Documentation Updates","url":"https://developers.google.com/search/updates/search_docs_updates.rss","category":"SEO & Google","trust":100,"enabled":true},
+  {"id":"google-search-blog","name":"Google Search Central Blog","url":"https://developers.google.com/search/blog/feeds/posts/default?alt=rss","category":"SEO & Google","trust":100,"enabled":true},
+  {"id":"search-engine-land","name":"Search Engine Land","url":"https://searchengineland.com/feed","category":"SEO & Google","trust":80,"enabled":true},
+  {"id":"search-engine-journal","name":"Search Engine Journal","url":"https://www.searchenginejournal.com/feed/","category":"SEO & Google","trust":75,"enabled":true},
+  {"id":"search-engine-roundtable","name":"Search Engine Roundtable","url":"https://www.seroundtable.com/index.rdf","category":"SEO & Google","trust":75,"enabled":true},
+  {"id":"ahrefs-blog","name":"Ahrefs Blog","url":"https://ahrefs.com/blog/feed/","category":"Content & Authority","trust":75,"enabled":true},
+  {"id":"semrush-blog","name":"Semrush Blog","url":"https://www.semrush.com/blog/feed/","category":"Tools","trust":70,"enabled":true},
+  {"id":"sistrix-blog","name":"SISTRIX Blog","url":"https://www.sistrix.de/news/feed/","category":"SEO & Google","trust":75,"enabled":true},
+  {"id":"arxiv-cs-ir","name":"arXiv Information Retrieval Research","url":"https://export.arxiv.org/rss/cs.IR","category":"Research","trust":65,"enabled":true},
+  {"id":"google-search-status","name":"Google Search Status","url":"https://status.search.google.com/summary/feed.atom","category":"SEO & Google","trust":100,"enabled":true}
+]

@@ -1,0 +1,41 @@
+name: VISIWING Weekly Deep Research
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 5 * * 4'  # Thursday 05:15 UTC; editorial review required
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+jobs:
+  deep-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 95
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_EDITOR_MODEL: gemini-2.5-flash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install package
+        run: python -m pip install .
+      - name: Verify secret
+        run: |
+          test -n "$GEMINI_API_KEY" || (echo 'Missing GEMINI_API_KEY secret' && exit 1)
+      - name: Run research and editorial workflow
+        run: python -m intelligence.cli weekly --agent max --timeout 4800
+      - name: Open draft-only PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          add-paths: out/
+          commit-message: 'chore: weekly VISIWING intelligence draft'
+          branch: automation/weekly-intelligence
+          title: 'VISIWING Weekly – editorial review required'
+          body: |
+            Automatically generated **draft** based on Gemini Deep Research.
+            Check every claim, source, publication date, and recommendation before publication.
+            No email was sent.
+          labels: research, needs-editorial-review

@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.DS_Store
+/data/
+/out/*/interaction-state.json
+/out/*/raw-interaction.json
+/out/*/deep-research-report.md
+/out/*/research-prompt.md

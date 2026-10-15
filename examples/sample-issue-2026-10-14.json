@@ -1,0 +1,55 @@
+{
+  "as_of": "2026-10-14",
+  "subject": "VISIWING Weekly #0: Wie Google und ChatGPT die Suche verändern",
+  "intro": "Google startet eine neue UGC-Dateninitiative, präzisiert KI-Content-Hinweise und OpenAI führt neue Anzeigenformate ein. Wir trennen echte Änderungen von Mythen – mit direkt prüfbaren Primärquellen.",
+  "status": "review_required",
+  "review_note": "Demonstration from individually web-checked public primary sources on 2026-10-14; not an actual Gemini Deep Research API output.",
+  "stories": [
+    {
+      "title": "Google dokumentiert sein UGC Fresh Data Program",
+      "summary": "Google hat am 8. Oktober 2026 eine Dokumentation zum UGC Fresh Data Program hinzugefügt. Das Programm richtet sich an bestimmte Plattformanbieter und soll zeitnahe nutzergenerierte Inhalte besser verfügbar machen. Es ist kein allgemeiner Ranking-Hack für Unternehmenswebsites.",
+      "action": "Prüfe, ob UGC, Kundenbewertungen oder eigene Community-Inhalte ein relevanter Datenkanal sind. Prüfe die tatsächlichen Teilnahmebedingungen, statt einen SEO-Effekt zu unterstellen.",
+      "category": "SEO & Plattformen", "evidence": "Offizielle Google-Dokumentation", "published_at": "2026-10-08",
+      "sources": ["https://developers.google.com/search/updates"], "review_status": "pending"
+    },
+    {
+      "title": "Google aktualisiert Hinweise zu generativen KI-Inhalten",
+      "summary": "Am 1. Oktober 2026 hat Google seine Dokumentation zur Verwendung generativer KI-Inhalte mit Informationen aus den Search Quality Rater Guidelines synchronisiert. Aus dem Dokumentationsupdate allein folgt keine nachgewiesene Ranking-Änderung.",
+      "action": "Wähle drei wichtige KI-gestützte Leistungsseiten und prüfe eigenen Mehrwert, belastbare Aussagen, Quellen und Suchintention. Dokumentiere die Änderungen und beobachte nachfolgende Performance.",
+      "category": "Content & E-E-A-T", "evidence": "Offizielle Google-Dokumentation", "published_at": "2026-10-01",
+      "sources": ["https://developers.google.com/search/updates"], "review_status": "pending"
+    },
+    {
+      "title": "ChatGPT erweitert Anzeigenformate und Messmöglichkeiten",
+      "summary": "OpenAI hat am 5. Oktober 2026 ein neues visuelles Anzeigenformat für ChatGPT vorgestellt sowie erweiterte Möglichkeiten zur Messung und Markenbewertung. Organische Erwähnungen und bezahlte Werbeplatzierung sollten in AI-Visibility-Berichten getrennt betrachtet werden.",
+      "action": "Ergänze in deiner KI-Sichtbarkeits-Messlogik zwei getrennte Kennzahlen: organische Erwähnungen/Empfehlungen und bezahlte Platzierungen. Verwechsle beide nicht mit einer Rankingposition.",
+      "category": "AI Visibility & Measurement", "evidence": "Offizielle OpenAI-Ankündigung", "published_at": "2026-10-05",
+      "sources": ["https://openai.com/index/new-chatgpt-ads-format-and-measurement/"], "review_status": "pending"
+    },
+    {
+      "title": "Search Console zeigt multimodale Suchperformance",
+      "summary": "Google kündigte am 24. September 2026 Berichte zur multimodalen Websuche in der Search Console an. Abgedeckt sind unter anderem Lens, Circle to Search und Bild-Uploads. Eine etwas ältere Entwicklung, die für den aktuellen Maßnahmenplan relevant bleibt.",
+      "action": "Kontrolliere in der Search Console den multimodalen Suchtypfilter und exportiere die Daten, sofern vorhanden. Lege Bild- und Produktcontent als separates Optimierungsfeld an.",
+      "category": "Multimodal Search", "evidence": "Offizieller Google-Blog", "published_at": "2026-09-24",
+      "sources": ["https://developers.google.com/search/blog/2026/09/web-multimodal-in-sc"], "review_status": "pending"
+    }
+  ],
+  "tools": [
+    {
+      "title": "Google Search Console: multimodaler Performance-Filter",
+      "summary": "Der neue Filter hilft bei der Einordnung bildbasierter Suchanfragen. Er ist ein Funktionsupdate, kein neues unabhängiges SEO-Produkt.",
+      "action": "Exportiere vorhandene Daten und untersuche, ob einzelne Bildkategorien oder Leistungsseiten über multimodale Eingaben gefunden werden.",
+      "category": "Google Tool Update", "evidence": "Primärquelle", "published_at": "2026-09-24",
+      "sources": ["https://developers.google.com/search/blog/2026/09/web-multimodal-in-sc"], "review_status": "pending"
+    }
+  ],
+  "quick_wins": [
+    {
+      "title": "AI-Visibility-Berichte um Anzeigen-Unterscheidung ergänzen",
+      "summary": "Mehrere Suchoberflächen kombinieren organische Ergebnisse mit Werbung. Das erschwert aggregierte Share-of-Voice-Zahlen ohne Kennzeichnung.",
+      "action": "Erfasse bei jedem Test den Antwortmodus und die Art der Darstellung, bevor du organische Empfehlungen vergleichst.",
+      "category": "Measurement", "evidence": "Empfehlung als Schlussfolgerung gekennzeichnet", "published_at": "2026-10-05",
+      "sources": ["https://openai.com/index/new-chatgpt-ads-format-and-measurement/"], "review_status": "pending"
+    }
+  ]
+}
